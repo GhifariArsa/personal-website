@@ -12,14 +12,18 @@ export default function Game() {
     let Bodies = Matter.Bodies;
     let MouseConstraint = Matter.MouseConstraint;
 
-    let engine = Engine.create({});
+    let engine = Engine.create({
+      timing: {
+        timeScale: 0.7,
+      },
+    });
 
     let render = Render.create({
       element: boxRef.current,
       engine: engine,
       canvas: canvasRef.current,
       options: {
-        width: 500,
+        width: 600,
         height: 400,
         background: "rgba(255, 255, 255, 0.5)",
         wireframes: false,
@@ -40,80 +44,67 @@ export default function Game() {
     World.add(engine.world, mouseConstraint);
 
     // Objects
-    const wall = Bodies.rectangle(0, 200, 10, 400, {
+    let objects = [];
+
+    const wall = Bodies.rectangle(-499, 200, 1000, 400, {
       isStatic: true,
       render: {
         fillStyle: "black",
       },
     });
+    objects.push(wall);
 
-    const wall2 = Bodies.rectangle(500, 200, 10, 400, {
+    const wall2 = Bodies.rectangle(1099, 200, 1000, 400, {
       isStatic: true,
       render: {
         fillStyle: "black",
       },
     });
+    objects.push(wall2);
 
-    const floor = Bodies.rectangle(0, 400, 1000, 10, {
+    const floor = Bodies.rectangle(0, 549, 1500, 300, {
       isStatic: true,
       render: {
         fillStyle: "black",
       },
     });
+    objects.push(floor);
 
-    const ceiling = Bodies.rectangle(0, 0, 1000, 10, {
+    const ceiling = Bodies.rectangle(0, -499, 1500, 1000, {
       isStatic: true,
       render: {
         fillStyle: "black",
       },
     });
+    objects.push(ceiling);
 
-    const ball = Bodies.circle(100, 0, 50, {
-      restitution: 0,
+    const roundedRect = Bodies.rectangle(200, 200, 200, 100, {
+      restitution: 0.3,
+      chamfer: { radius: 20 }, // Set the radius for rounded corners
       render: {
-        fillStyle: "blue",
+        fillStyle: "white",
+        strokeStyle: "black", // Set the stroke color
+        lineWidth: 2, // Set the width of the stroke
       },
     });
 
-    const ball2 = Bodies.circle(120, 0, 34, {
-      restitution: 0,
-      render: {
-        fillStyle: "blue",
-      },
-    });
+    // Push the rounded rectangle into the objects array
+    objects.push(roundedRect);
 
-    const ball3 = Bodies.circle(150, 0, 23, {
-      restitution: 0,
-      render: {
-        fillStyle: "blue",
-      },
-    });
+    for (let i = 0; i < 7; i++) {
+      objects.push(
+        Bodies.circle(100 + i * 20, 0, Math.random() * 40 + 30, {
+          restitution: 0.3,
+          render: {
+            fillStyle: "white",
+            strokeStyle: "black",
+            lineWidth: 3,
+          },
+        })
+      );
+    }
 
-    const ball4 = Bodies.circle(300, 0, 23, {
-      restitution: 0,
-      render: {
-        fillStyle: "red",
-      },
-    });
-
-    const ball5 = Bodies.circle(100, 0, 42, {
-      restitution: 0,
-      render: {
-        fillStyle: "blue",
-      },
-    });
-
-    World.add(engine.world, [
-      floor,
-      ball,
-      wall,
-      wall2,
-      ceiling,
-      ball2,
-      ball3,
-      ball4,
-      ball5,
-    ]);
+    World.add(engine.world, objects);
 
     Engine.run(engine);
     Render.run(render);
