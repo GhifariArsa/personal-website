@@ -1,5 +1,6 @@
-import Game from "./Game";
+import { ReactP5Wrapper } from "@p5-wrapper/react";
 import "./intro.css";
+import * as box from "./sketch.js";
 
 export default function Me() {
   return (
@@ -11,7 +12,12 @@ export default function Me() {
           graduating in november 2024
         </span>
       </div>
-      <Game />
+      <div>
+        <span style={{ fontSize: "9px" }}>
+          built with matter-js and rendered with p5 :)
+        </span>
+        <ReactP5Wrapper sketch={box.sketch} />
+      </div>
     </div>
   );
 }
