@@ -78,8 +78,8 @@ export const javaSVG = (
 export const reactSVG = (
   <svg
     fill="#000000"
-    width="800px"
-    height="800px"
+    width="70%"
+    height="70%"
     viewBox="0 0 512 512"
     xmlns="http://www.w3.org/2000/svg"
   >

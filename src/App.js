@@ -10,6 +10,8 @@ import {
   nodejsSVG,
   expressjsSVG,
 } from "./assets/skillsSVG.js";
+import Experience from "./Components/Experience/Experience.js";
+import { kss, iff } from "./assets/experienceList.js";
 
 function App() {
   return (
@@ -35,6 +37,21 @@ function App() {
         <span>
           <h1>Experience</h1>
         </span>
+        <Experience
+          title={kss.title}
+          company={kss.company}
+          experience={kss.experience}
+        />
+        <Experience
+          title={iff.title}
+          company={iff.company}
+          experience={iff.experience}
+        />
+        <Experience
+          title={kss.title}
+          company={kss.company}
+          experience={kss.experience}
+        />
       </div>
     </div>
   );
