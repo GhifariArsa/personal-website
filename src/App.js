@@ -9,9 +9,11 @@ import {
   reactSVG,
   nodejsSVG,
   expressjsSVG,
+  sqlSVG,
+  tailwindSVG
 } from "./assets/skillsSVG.js";
 import Experience from "./Components/Experience/Experience.js";
-import { kss, iff } from "./assets/experienceList.js";
+import { kss, iff, soundse, woolies } from "./assets/experienceList.js";
 
 function App() {
   return (
@@ -20,8 +22,8 @@ function App() {
       <Me />
       <div className="tech">
         <div className="cards">
-          <Skills skills={[javascriptSVG, pythonSVG, javaSVG]} />
-          <Skills skills={[reactSVG, expressjsSVG, nodejsSVG]} />
+          <Skills skills={[javascriptSVG, pythonSVG, javaSVG, sqlSVG]} />
+          <Skills skills={[reactSVG, expressjsSVG, nodejsSVG, tailwindSVG]} />
         </div>
         <div className="tech-header">
           <span>
@@ -48,10 +50,18 @@ function App() {
           experience={iff.experience}
         />
         <Experience
-          title={kss.title}
-          company={kss.company}
-          experience={kss.experience}
+          title={soundse.title}
+          company={soundse.company}
+          experience={soundse.experience}
         />
+        <Experience
+          title={woolies.title}
+          company={woolies.company}
+          experience={woolies.experience}
+        />
+      </div>
+      <div className="projects">
+        <h1>Projects</h1>
       </div>
     </div>
   );

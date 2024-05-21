@@ -18,3 +18,24 @@ export const iff = {
     "Fostered a culture of collaboration within the liaison team and across different departments. Coordinated efforts to streamline communication channels and enhance efficiency in liaising with external entities.",
   ],
 };
+
+export const soundse = {
+  company: "Soundsekerta",
+  title: "Event Staff",
+  experience: [
+    "Orchestrated and executed all aspects of concert planning, including logistics, scheduling, and coordination of resources to ensure a seamless and successful event.",
+    "Oversaw the setup, operation, and breakdown of the concert stage. Coordinated with technical teams, performers, and venue staff to guarantee smooth transitions between acts.",
+    "Led a team of event staff, ensuring clear communication, assigning tasks, and maintaining a cohesive working environment. Managed volunteers effectively during the event.",
+    "Established effective communication channels with performers, crew, and venue personnel, facilitating a collaborative and efficient work environment.",
+  ],
+};
+
+export const woolies = {
+  company: "Woolworths",
+  title: "Team Member",
+  experience: [
+    "Contribute to the efficient functioning of the store by maintaining neat and organised shelves, monitoring stock levels, and assisting in restocking activities.",
+    "Provide exceptional customer service by assisting shoppers with inquiries, locating products, and ensuring a positive shopping experience.",
+    "Work seamlessly with team members to achieve common goals, foster a positive work environment, and contribute to the overall success of the team.",
+  ]
+};

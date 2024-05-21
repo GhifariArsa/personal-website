@@ -7,10 +7,12 @@ export default function Me() {
     <div className="intro">
       <div className="block">
         <span className="header">hello, 👋</span>
-        <span>
-          nice to meet you! i'm arsa, student learning software development
-          graduating in november 2024
-        </span>
+        <p>
+          Let me introduce my self, my name is <b>Ghifari Arsa</b> and I am a computer science student graduating in November 2024.
+        </p>
+        <p>
+        Allow share my journey and the projects I've worked on. I am fluent various programming languages and frameworks, with a keen interest in full-stack development. Whether it's crafting a sleek user interface or optimizing backend processes, I love turning ideas into reality through code.
+      </p>
       </div>
       <div>
         <span style={{ fontSize: "9px" }}>
