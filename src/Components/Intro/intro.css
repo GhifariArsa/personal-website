@@ -9,6 +9,7 @@
 .intro .header {
   font-size: 3.5rem;
   font-weight: bolder;
+  height: max-content;
 }
 
 .intro .block {
