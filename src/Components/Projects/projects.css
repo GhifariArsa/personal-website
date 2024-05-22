@@ -1,0 +1,35 @@
+.card {
+  position: sticky;
+  top: 100px;
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 4px 4px #323232;
+  border-radius: 4px;
+  height: 500px;
+  border: 2px solid #323232;
+}
+
+.card:nth-child(1) {
+  top: 100px;
+  rotate: 0.5deg;
+}
+
+.card:nth-child(2) {
+  top: 120px;
+  rotate: 1deg;
+}
+
+.card:nth-child(3) {
+  top: 140px;
+  rotate: 1.5deg;
+}
+
+.card:nth-child(4) {
+  top: 160px;
+  rotate: 2deg;
+}
+
+.card:nth-child(5) {
+  top: 180px;
+  rotate: 2.5deg;
+}

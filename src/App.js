@@ -10,10 +10,11 @@ import {
   nodejsSVG,
   expressjsSVG,
   sqlSVG,
-  tailwindSVG
+  tailwindSVG,
 } from "./assets/skillsSVG.js";
 import Experience from "./Components/Experience/Experience.js";
 import { kss, iff, soundse, woolies } from "./assets/experienceList.js";
+import Projects from "./Components/Projects/Projects.js";
 
 function App() {
   return (
@@ -61,7 +62,41 @@ function App() {
         />
       </div>
       <div className="projects">
-        <h1>Projects</h1>
+        <div className="projects-header">
+          <h1>Projects</h1>
+        </div>
+        <div className="projects-cards">
+          <Projects />
+          <Projects />
+          <Projects />
+          <Projects />
+          <Projects />
+        </div>
+      </div>
+      <div className="experience">
+        <span>
+          <h1>Experience</h1>
+        </span>
+        <Experience
+          title={kss.title}
+          company={kss.company}
+          experience={kss.experience}
+        />
+        <Experience
+          title={iff.title}
+          company={iff.company}
+          experience={iff.experience}
+        />
+        <Experience
+          title={soundse.title}
+          company={soundse.company}
+          experience={soundse.experience}
+        />
+        <Experience
+          title={woolies.title}
+          company={woolies.company}
+          experience={woolies.experience}
+        />
       </div>
     </div>
   );
