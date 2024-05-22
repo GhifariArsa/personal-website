@@ -95,6 +95,15 @@ p {
   margin-inline: max(0px, ((100% - 50rem) / 2));
 }
 
+footer {
+  margin: 3rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     font-family: "Roboto Mono", monospace;
