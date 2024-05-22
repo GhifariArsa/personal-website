@@ -8,7 +8,7 @@ export default function Projects({ title, description, link, img, skills }) {
   };
   return (
     <div className="card" style={{}}>
-      <div>
+      <div className="description">
         <h2>{title}</h2>
         <p>{description}</p>
         {skills ? <SmallButtons list={skills} /> : <></>}

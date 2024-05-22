@@ -12,14 +12,19 @@ import {
   sqlSVG,
   tailwindSVG,
 } from "./assets/skillsSVG.js";
-import { gameOfLife, TodoApp, movieApp } from "./assets/projectsList.js";
+import {
+  gameOfLife,
+  TodoApp,
+  movieApp,
+  minecraftVil,
+} from "./assets/projectsList.js";
 import Experience from "./Components/Experience/Experience.js";
 import { kss, iff, soundse, woolies } from "./assets/experienceList.js";
 import Projects from "./Components/Projects/Projects.js";
 import { useEffect, useState } from "react";
 
 function App() {
-  const projectsList = [gameOfLife, TodoApp, movieApp];
+  const projectsList = [gameOfLife, TodoApp, movieApp, minecraftVil];
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1200);
 
@@ -51,6 +56,11 @@ function App() {
               <span>
                 <h1>Technical Skills</h1>
               </span>
+              <p>
+                A glimpse into my technical toolbox, built through years of
+                project work and a passion for exploring new technologies. Here,
+                you'll find expertise in Javascript, Python, Java and more.
+              </p>
             </div>
           </>
         ) : (

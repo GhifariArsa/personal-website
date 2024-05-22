@@ -1,6 +1,7 @@
 import gof from "./projects_image/gameoflife.gif";
 import todo from "./projects_image/todo.gif";
 import movie from "./projects_image/movie.png";
+import minecraft from "./projects_image/minecraft.gif";
 
 export const gameOfLife = {
   title: "Game Of Life",
@@ -35,5 +36,17 @@ export const movieApp = {
     "Javascript",
     "HTML",
     "CSS",
+  ],
+};
+
+export const minecraftVil = {
+  title: "Minecraft Procedurally Generated Village",
+  description:
+    "This is a procedurally generated minecraft village, implemented using Python through the MCPI-API. It features, terrain smoothing, randomly generated houses and rooms.",
+  image: minecraft,
+  skills: [
+    "Python",
+    "Networking",
+    "Algorithms",
   ],
 };

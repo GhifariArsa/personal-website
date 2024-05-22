@@ -37,8 +37,12 @@
   transition: 0.4s;
 }
 
-.card h2 {
-  font-size: larger;
+.description {
+  margin-right: 1rem;
+}
+
+.card p {
+  font-size: 14px;
 }
 
 .card-image {
@@ -127,6 +131,11 @@
     width: 250px;
     border: 2px solid black;
   }
+
+  .description {
+    margin-right: 0;
+  }
+  
 
   .card:nth-child(1) {
     top: 100px;
