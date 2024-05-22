@@ -24,7 +24,7 @@ export const TodoApp = {
 export const movieApp = {
   title: "React Movie App",
   description:
-    'This full-stack movie application offers a comprehensive platform for movie enthusiasts, featuring a catalog of movies, a "coming soon" section, user reviews, account creation, and an admin dashboard. Users can browse through detailed movie listings, stay updated on upcoming releases, and read and write reviews. Administrators have access to manage movie listings and reviews through a dedicated dashboard.',
+    'This is a full-stack movie application, featuring a catalog of movies, a "coming soon" section, user reviews, account creation, and an admin dashboard. Users can browse through detailed movie listings, stay updated on upcoming releases, and read and write reviews. Administrators have access to manage movie listings and reviews through a dedicated dashboard.',
   image: movie,
   skills: [
     "React",
