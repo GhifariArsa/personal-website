@@ -58,8 +58,11 @@ function App() {
               </span>
               <p>
                 A glimpse into my technical toolbox, built through project work
-                and a passion for exploring new technologies. Here, you'll find
-                expertise in Javascript, Python, Java and more.
+                and a passion for exploring new technologies.
+              </p>
+              <p>
+                Here, you'll find expertise in Javascript, Python, Java and
+                more.
               </p>
             </div>
           </>
