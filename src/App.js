@@ -122,6 +122,20 @@ function App() {
           })}
         </div>
       </div>
+      <footer
+        style={{
+          margin: "3rem",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        <h5 style={{ marginBottom: "0rem" }}>
+          Designed in figma, built using React, deployed with AWS.
+        </h5>
+        <h5>thank you for visiting :)</h5>
+      </footer>
     </div>
   );
 }

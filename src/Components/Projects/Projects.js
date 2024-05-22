@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import SmallButtons from "../small_buttons/SmallButtons";
 import "./projects.css";
 

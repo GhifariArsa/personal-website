@@ -37,7 +37,7 @@ export default function Me() {
       {isLargeScreen && (
         <div>
           <span style={{ fontSize: "9px" }}>
-            built with matter-js and rendered with p5 :)
+            built with matter-js and rendered with p5 (through React p5 wrapper) :)
           </span>
           <ReactP5Wrapper sketch={box.sketch} />
         </div>
