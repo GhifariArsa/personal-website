@@ -1,0 +1,21 @@
+.buttons-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.small-button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 0.4rem;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.small-button:hover {
+  background-color: #323232;
+  color: white;
+  transition: 0.4s;
+}

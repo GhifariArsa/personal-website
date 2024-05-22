@@ -1,3 +1,12 @@
+.tech {
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 body {
   font-family: "Roboto Mono", monospace;
 }
@@ -45,6 +54,7 @@ p {
   text-align: center;
   margin-top: 5rem;
   display: flex;
+  flex-direction: row;
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -82,3 +92,90 @@ p {
   margin-inline: max(0px, ((100% - 50rem) / 2));
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Roboto Mono", monospace;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: inherit;
+    transition: font-size 0.15s ease;
+  }
+
+  a:hover {
+    font-size: calc(1em + 2px);
+    transition: font-size 0.15s ease;
+  }
+
+  p {
+    line-height: 1.5rem;
+  }
+
+  .App {
+    margin: 1rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .header-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-child#middle {
+    text-align: center;
+  }
+
+  .header-child#end {
+    text-align: right;
+  }
+
+  .tech {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .tech-header {
+    width: 100%;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projects {
+    margin-top: 2rem;
+  }
+
+  .projects-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 1rem 0;
+    padding-bottom: 0;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .projects-cards {
+    margin-inline: max(0px, ((100% - 50rem) / 2));
+  }
+}
+
+@media only screen and (min-with: 1200px) {
+}

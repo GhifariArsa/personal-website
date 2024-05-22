@@ -1,51 +1,107 @@
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem;
+@media only screen and (min-width: 0px) {
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .container .glass {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    --main-focus: #2d8cf0;
+    position: relative;
+    width: 70px;
+    height: 80px;
+    background: #fff;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+  }
+
+  .container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+  }
+
+  .container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .container .glass svg {
+    font-size: 2.5em;
+    fill: #000;
+  }
 }
 
-.container .glass {
-  --font-color: #323232;
-  --font-color-sub: #666;
-  --bg-color: #fff;
-  --main-color: #323232;
-  --main-focus: #2d8cf0;
-  position: relative;
-  width: 180px;
-  height: 200px;
-  background: #fff;
-  border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  border-radius: 10px;
-  margin: 0 -45px;
-  backdrop-filter: blur(10px);
-  transform: rotate(calc(var(--r) * 1deg));
-}
+@media only screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+  }
 
-.container:hover .glass {
-  transform: rotate(0deg);
-  margin: 0 10px;
-}
+  .container .glass {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    --main-focus: #2d8cf0;
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: #fff;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+  }
 
-.container .glass::before {
-  content: attr(data-text);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.05);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-.container .glass svg {
-  font-size: 2.5em;
-  fill: #000;
+  .container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+  }
+
+  .container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .container .glass svg {
+    font-size: 2.5em;
+    fill: #000;
+  }
 }

@@ -1,15 +1,28 @@
-import "./projects.css"
+import { useEffect, useState } from "react";
+import SmallButtons from "../small_buttons/SmallButtons";
+import "./projects.css";
 
-export default function Projects() {
-  
+export default function Projects({ title, description, link, img, skills }) {
+  const handleClick = () => {
+    window.open(link, "_blank");
+  };
   return (
     <div className="card" style={{}}>
-      <h2>github project</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at
-        officiis exercitationem similique delectus corrupti eveniet eos dolorem
-        quibusdam facere.
-      </p>
+      <div>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        {skills ? <SmallButtons list={skills} /> : <></>}
+      </div>
+      <div className="image-button">
+        {img ? <img src={img} alt="" className="card-image" /> : <></>}
+        {link ? (
+          <button onClick={handleClick} className="card-button">
+            Github Repo
+          </button>
+        ) : (
+          <></>
+        )}
+      </div>
     </div>
   );
 }

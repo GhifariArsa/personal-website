@@ -1,22 +1,45 @@
-.intro {
-  display: flex;
-  justify-content: space-evenly;
-  margin-right: 4rem;
-  margin-left: 4rem;
-  margin-top: 12rem;
+@media only screen and (min-width: 0px) {
+  .intro {
+    margin-top: 3rem;
+  }
+
+  .intro .header {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    height: max-content;
+  }
+
+  .intro .block {
+    max-width: 100%;
+  }
+
+  .scene {
+    max-width: 20%;
+    width: 10px;
+  }
 }
 
-.intro .header {
-  font-size: 3.5rem;
-  font-weight: bolder;
-  height: max-content;
-}
+@media only screen and (min-width: 1200px) {
+  .intro {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-top: 12rem;
+  }
 
-.intro .block {
-  max-width: 37.5%;
-}
+  .intro .header {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    height: max-content;
+  }
 
-.scene {
-  max-width: 20%;
-  width: 10px;
+  .intro .block {
+    max-width: 37.5%;
+  }
+
+  .scene {
+    max-width: 20%;
+    width: 10px;
+  }
 }

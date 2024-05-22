@@ -7,6 +7,43 @@
   border-radius: 4px;
   height: 500px;
   border: 2px solid #323232;
+  display: flex;
+  justify-content: center;
+}
+
+.card-button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.image-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.card-button:hover {
+  background-color: #323232;
+  color: white;
+  transition: 0.4s;
+}
+
+.card h2 {
+  font-size: larger;
+}
+
+.card-image {
+  height: 70%;
+  border: 2px solid black;
 }
 
 .card:nth-child(1) {
@@ -32,4 +69,87 @@
 .card:nth-child(5) {
   top: 180px;
   rotate: 2.5deg;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    position: sticky;
+    top: 100px;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 4px 4px #323232;
+    border-radius: 4px;
+    height: max-content;
+    border: 2px solid #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .card p {
+    font-size: small;
+  }
+
+  .card h2 {
+    font-size: medium;
+  }
+
+  .card-button {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .image-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .card-button:hover {
+    background-color: #323232;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .card-image {
+    height: 50%;
+    width: 250px;
+    border: 2px solid black;
+  }
+
+  .card:nth-child(1) {
+    top: 100px;
+    rotate: 0.5deg;
+  }
+
+  .card:nth-child(2) {
+    top: 120px;
+    rotate: 1deg;
+  }
+
+  .card:nth-child(3) {
+    top: 140px;
+    rotate: 1.5deg;
+  }
+
+  .card:nth-child(4) {
+    top: 160px;
+    rotate: 2deg;
+  }
+
+  .card:nth-child(5) {
+    top: 180px;
+    rotate: 2.5deg;
+  }
 }
