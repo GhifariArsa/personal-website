@@ -57,9 +57,9 @@ function App() {
                 <h1>Technical Skills</h1>
               </span>
               <p>
-                A glimpse into my technical toolbox, built through years of
-                project work and a passion for exploring new technologies. Here,
-                you'll find expertise in Javascript, Python, Java and more.
+                A glimpse into my technical toolbox, built through project work
+                and a passion for exploring new technologies. Here, you'll find
+                expertise in Javascript, Python, Java and more.
               </p>
             </div>
           </>
