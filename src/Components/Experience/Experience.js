@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./experience.css";
 
-export default function Experience({ title, company, experience }) {
+export default function Experience({ title, company, experience, date }) {
   const [isVisible, setIsVisible] = useState(false);
   const handleClick = () => {
     setIsVisible(!isVisible);
@@ -13,9 +13,14 @@ export default function Experience({ title, company, experience }) {
         className={`accordion ${isVisible ? "active" : ""}`}
         onClick={handleClick}
       >
-        <div>
-          <h2 style={{ marginBottom: 0, marginTop: "0" }}>{title}</h2>
-          <span style={{ fontSize: "12px" }}>{company}</span>
+        <div className="button-header">
+          <div>
+            <h2 style={{ marginBottom: 0, marginTop: "0" }}>{title}</h2>
+            <span>{company}</span>
+          </div>
+          <div>
+            <p>{date}</p>
+          </div>
         </div>
         <div className={`panel ${isVisible ? "show" : ""}`}>
           <ul style={{ fontSize: "14px" }}>

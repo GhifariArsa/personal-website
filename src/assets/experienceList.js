@@ -6,10 +6,11 @@ export const kss = {
     "Proficiently employed JasperSoft Studio to design and personalize reports, significantly enhancing the efficiency of report generation.",
     "Collaborated with cross-functional teams to understand project requirements, participated in agile development processes, and effectively communicated technical concepts to both technical and non-technical stakeholders.",
   ],
+  date: "Jul 2021 - Nov 2021",
 };
 
 export const iff = {
-  company: "Indonesian Film Festival",
+  company: "Indonesian Film Festival | PPIA University of Melbourne",
   title: "Liaison Vice-Coordinator",
   experience: [
     "Directed a team of dedicated members in executing liaison tasks for events. Provided guidance, set goals, and ensured effective collaboration among team members.",
@@ -17,10 +18,11 @@ export const iff = {
     "Proactively addressed challenges related to liaison activities, demonstrating quick and effective problem-solving skills. Mitigated potential issues to ensure the smooth progress of events.",
     "Fostered a culture of collaboration within the liaison team and across different departments. Coordinated efforts to streamline communication channels and enhance efficiency in liaising with external entities.",
   ],
+  date: "Sep 2023 - Apr 2024",
 };
 
 export const soundse = {
-  company: "Soundsekerta",
+  company: "Soundsekerta | PPIA Monash",
   title: "Event Staff",
   experience: [
     "Orchestrated and executed all aspects of concert planning, including logistics, scheduling, and coordination of resources to ensure a seamless and successful event.",
@@ -28,6 +30,7 @@ export const soundse = {
     "Led a team of event staff, ensuring clear communication, assigning tasks, and maintaining a cohesive working environment. Managed volunteers effectively during the event.",
     "Established effective communication channels with performers, crew, and venue personnel, facilitating a collaborative and efficient work environment.",
   ],
+  date: "Mar 2023 - Nov 2023",
 };
 
 export const woolies = {
@@ -37,5 +40,6 @@ export const woolies = {
     "Contribute to the efficient functioning of the store by maintaining neat and organised shelves, monitoring stock levels, and assisting in restocking activities.",
     "Provide exceptional customer service by assisting shoppers with inquiries, locating products, and ensuring a positive shopping experience.",
     "Work seamlessly with team members to achieve common goals, foster a positive work environment, and contribute to the overall success of the team.",
-  ]
+  ],
+  date: "Oct 2022 - Present",
 };
