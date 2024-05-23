@@ -90,21 +90,28 @@ function App() {
           title={kss.title}
           company={kss.company}
           experience={kss.experience}
-        />
-        <Experience
-          title={iff.title}
-          company={iff.company}
-          experience={iff.experience}
-        />
-        <Experience
-          title={soundse.title}
-          company={soundse.company}
-          experience={soundse.experience}
+          date={kss.date}
         />
         <Experience
           title={woolies.title}
           company={woolies.company}
           experience={woolies.experience}
+          date={woolies.date}
+        />
+        <span>
+          <h1>Volunteering</h1>
+        </span>
+        <Experience
+          title={iff.title}
+          company={iff.company}
+          experience={iff.experience}
+          date={iff.date}
+        />
+        <Experience
+          title={soundse.title}
+          company={soundse.company}
+          experience={soundse.experience}
+          date={soundse.date}
         />
       </div>
       <div className="projects">
