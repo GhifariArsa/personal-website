@@ -27,7 +27,7 @@ export default function TopHeader() {
       </div>
       <div className="header-child" id="end" style={{ width: "80px" }}>
         <a
-          href="mailto:ghifariarsa2048@gmail.com"
+          href="mailto:ghifariarsa1403@gmail.com"
           style={{ display: "flex", flexDirection: "column" }}
         >
           <span>reach</span>
