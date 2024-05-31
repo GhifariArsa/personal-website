@@ -2,6 +2,7 @@ import gof from "./projects_image/gameoflife.gif";
 import todo from "./projects_image/todo.gif";
 import movie from "./projects_image/movie.png";
 import minecraft from "./projects_image/minecraft.gif";
+import homeless from "./projects_image/homeless.gif";
 
 export const gameOfLife = {
   title: "Game Of Life",
@@ -37,6 +38,7 @@ export const movieApp = {
     "HTML",
     "CSS",
   ],
+  link: "https://github.com/GhifariArsa/school-projects",
 };
 
 export const minecraftVil = {
@@ -44,9 +46,15 @@ export const minecraftVil = {
   description:
     "This is a procedurally generated minecraft village, implemented using Python through the MCPI-API. It features, terrain smoothing, randomly generated houses and rooms.",
   image: minecraft,
-  skills: [
-    "Python",
-    "Networking",
-    "Algorithms",
-  ],
+  skills: ["Python", "Networking", "Algorithms"],
+  link: "https://github.com/GhifariArsa/school-projects",
+};
+
+export const homeless_java = {
+  title: "WebApp built with Java, with Javalin and Thymeleaf",
+  description:
+    "This full-stack web app aims to raise awareness about homelessness in Australia through an interactive data dashboard. The dashboard fetches data on various aspects of homelessness, allowing users to explore it visually with filters based on region, demographics, and other relevant criteria.",
+  image: homeless,
+  skills: ["Java", "Javalin", "Thymeleaf", "HTML", "CSS", "Javascript", "SQL"],
+  link: "https://github.com/GhifariArsa/school-projects",
 };

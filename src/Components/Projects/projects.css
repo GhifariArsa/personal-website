@@ -52,27 +52,27 @@
 
 .card:nth-child(1) {
   top: 100px;
-  rotate: 0.5deg;
+  rotate: 0.25deg;
 }
 
 .card:nth-child(2) {
   top: 120px;
-  rotate: 1deg;
+  rotate: 0.5deg;
 }
 
 .card:nth-child(3) {
   top: 140px;
-  rotate: 1.5deg;
+  rotate: 0.75deg;
 }
 
 .card:nth-child(4) {
   top: 160px;
-  rotate: 2deg;
+  rotate: 1deg;
 }
 
 .card:nth-child(5) {
   top: 180px;
-  rotate: 2.5deg;
+  rotate: 1.25deg;
 }
 
 @media only screen and (max-width: 600px) {
@@ -136,29 +136,4 @@
     margin-right: 0;
   }
   
-
-  .card:nth-child(1) {
-    top: 100px;
-    rotate: 0.5deg;
-  }
-
-  .card:nth-child(2) {
-    top: 120px;
-    rotate: 1deg;
-  }
-
-  .card:nth-child(3) {
-    top: 140px;
-    rotate: 1.5deg;
-  }
-
-  .card:nth-child(4) {
-    top: 160px;
-    rotate: 2deg;
-  }
-
-  .card:nth-child(5) {
-    top: 180px;
-    rotate: 2.5deg;
-  }
 }
