@@ -37,8 +37,7 @@ export default function Me() {
       {isLargeScreen && (
         <div>
           <span style={{ fontSize: "9px" }}>
-            built with matter-js and rendered with p5 (through React p5 wrapper)
-            :)
+            built with matter-js and rendered with p5 (through React p5 wrapper) - drag the balls around
           </span>
           <ReactP5Wrapper sketch={box.sketch} />
         </div>
