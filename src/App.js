@@ -17,6 +17,7 @@ import {
   TodoApp,
   movieApp,
   minecraftVil,
+  homeless_java,
 } from "./assets/projectsList.js";
 import Experience from "./Components/Experience/Experience.js";
 import { kss, iff, soundse, woolies } from "./assets/experienceList.js";
@@ -24,7 +25,7 @@ import Projects from "./Components/Projects/Projects.js";
 import { useEffect, useState } from "react";
 
 function App() {
-  const projectsList = [gameOfLife, TodoApp, movieApp, minecraftVil];
+  const projectsList = [gameOfLife, TodoApp, movieApp, minecraftVil, homeless_java];
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1200);
 
