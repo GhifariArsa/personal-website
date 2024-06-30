@@ -4,7 +4,8 @@ export const kss = {
   experience: [
     "Successfully gained proficiency in Java programming language, demonstrating the ability to design, develop, and troubleshoot code for various software applications",
     "Proficiently employed JasperSoft Studio to design and personalize reports, significantly enhancing the efficiency of report generation.",
-    "Collaborated with cross-functional teams to understand project requirements, participated in agile development processes, and effectively communicated technical concepts to both technical and non-technical stakeholders.",
+    "Developed an algorithm for converting numerical values to Indonesian words.",
+    "Implemented an automated invoicing system, increasing invoicing process speed and efficiency by 100%."
   ],
   date: "Jul 2021 - Nov 2021",
 };
