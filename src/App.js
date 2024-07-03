@@ -25,7 +25,13 @@ import Projects from "./Components/Projects/Projects.js";
 import { useEffect, useState } from "react";
 
 function App() {
-  const projectsList = [gameOfLife, TodoApp, movieApp, minecraftVil, homeless_java];
+  const projectsList = [
+    gameOfLife,
+    TodoApp,
+    movieApp,
+    minecraftVil,
+    homeless_java,
+  ];
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1200);
 
@@ -58,12 +64,14 @@ function App() {
                 <h1>Technical Skills</h1>
               </span>
               <p>
-                A glimpse into my technical toolbox, built through project work
-                and a passion for exploring new technologies.
+                I am proficient in JavaScript, Python, and Java, along with
+                their associated technologies such as Node.js, React, and
+                NestJS.
               </p>
               <p>
-                Here, you'll find expertise in Javascript, Python, Java and
-                more.
+                In addition, I have experience with modern cloud technologies,
+                particularly AWS and its services, including Lambda and EC2,
+                which I have used to build full-stack applications.
               </p>
             </div>
           </>
