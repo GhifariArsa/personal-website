@@ -75,6 +75,11 @@
   rotate: 1.25deg;
 }
 
+.card:nth-child(6) {
+  top: 200px;
+  rotate: 1.5deg;
+}
+
 @media only screen and (max-width: 600px) {
   .card {
     position: sticky;

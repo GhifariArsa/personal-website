@@ -50,6 +50,11 @@ p {
   text-align: right;
 }
 
+.header-subtitle {
+  font-size: smaller;
+  margin: 0;
+}
+
 .tech {
   text-align: left;
   margin-top: 5rem;

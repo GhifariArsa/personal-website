@@ -44,3 +44,16 @@ export const woolies = {
   ],
   date: "Oct 2022 - Present",
 };
+
+
+export const reyts = {
+  company: "Reyts Fintech",
+  title: "Software Developer",
+  experience: [
+    "Tasked to revamp the existing admin dashboard, improving user experience and functionality.",
+    "Utilized Vue.js to implement a modern, responsive interface while enhancing performance.",
+    "Gained proficiency in TypeScript during the development process, applying it to optimize code quality and maintainability.",
+    "Delivered a polished product, receiving positive feedback for improving usability and efficiency."
+  ],
+  date: "Jun 2024 - Nov 2024",
+};

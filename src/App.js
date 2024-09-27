@@ -18,19 +18,20 @@ import {
   movieApp,
   minecraftVil,
   homeless_java,
+  scooter_hiring_app,
 } from "./assets/projectsList.js";
 import Experience from "./Components/Experience/Experience.js";
-import { kss, iff, soundse, woolies } from "./assets/experienceList.js";
+import { kss, iff, soundse, woolies, reyts } from "./assets/experienceList.js";
 import Projects from "./Components/Projects/Projects.js";
 import { useEffect, useState } from "react";
 
 function App() {
   const projectsList = [
-    gameOfLife,
-    TodoApp,
-    movieApp,
     minecraftVil,
     homeless_java,
+    movieApp,
+    gameOfLife,
+    TodoApp,
   ];
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1200);
@@ -64,9 +65,9 @@ function App() {
                 <h1>Technical Skills</h1>
               </span>
               <p>
-                I am proficient in JavaScript, Python, and Java, along with
-                their associated technologies such as Node.js, React, and
-                NestJS.
+                I am proficient in JavaScript, TypeScript, Python, and Java,
+                along with their associated technologies such as Node.js, React,
+                NextJS, NestJS and more.
               </p>
               <p>
                 In addition, I have experience with modern cloud technologies,
@@ -94,12 +95,19 @@ function App() {
       <div className="experience">
         <span>
           <h1>Experience</h1>
+          <p class="header-subtitle">click to learn more</p>
         </span>
         <Experience
           title={kss.title}
           company={kss.company}
           experience={kss.experience}
           date={kss.date}
+        />
+        <Experience
+          title={reyts.title}
+          company={reyts.company}
+          experience={reyts.experience}
+          date={reyts.date}
         />
         <Experience
           title={woolies.title}

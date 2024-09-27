@@ -44,7 +44,7 @@ export const movieApp = {
 export const minecraftVil = {
   title: "Minecraft Procedurally Generated Village",
   description:
-    "This is a procedurally generated minecraft village, implemented using Python through the MCPI-API. It features, terrain smoothing, randomly generated houses and rooms.",
+    "This is a procedurally generated minecraft village, implemented using Python through the MCPI-API. It features, terrain smoothing, randomly generated houses and rooms, all powered by algorithms I designed.",
   image: minecraft,
   skills: ["Python", "Networking", "Algorithms"],
   link: "https://github.com/GhifariArsa/school-projects",
@@ -56,5 +56,24 @@ export const homeless_java = {
     "This full-stack web app aims to raise awareness about homelessness in Australia through an interactive data dashboard. The dashboard fetches data on various aspects of homelessness, allowing users to explore it visually with filters based on region, demographics, and other relevant criteria.",
   image: homeless,
   skills: ["Java", "Javalin", "Thymeleaf", "HTML", "CSS", "Javascript", "SQL"],
+  link: "https://github.com/GhifariArsa/school-projects",
+};
+
+export const scooter_hiring_app = {
+  title: "Scooter Hiring App, and Integration with with Raspberry PI",
+  description:
+    "This full-stack web application that simulates the functionality and architecture of an electric scooter hiring application. It integrates seamlessly with Raspberry Pi devices via WebSockets and leverages cloud databases for real-time booking and registration management.",
+  image: homeless,
+  skills: [
+    "NextJS",
+    "React",
+    "TypeScript",
+    "Python",
+    "Flask",
+    "Linux",
+    "Websockets",
+    "Google Cloud",
+    "SQL",
+  ],
   link: "https://github.com/GhifariArsa/school-projects",
 };
