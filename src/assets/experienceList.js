@@ -57,3 +57,14 @@ export const reyts = {
   ],
   date: "Jun 2024 - Nov 2024",
 };
+
+export const kecilin = {
+  company: "AssistX Enterprise",
+  title: "Full Stack Software Developer",
+  experience: [
+    "Collaborated with generative AI teams to architect and deliver AI-driven solutions for multiple enterprise clients",
+    "Worked on front-end development efforts using React and Umi.js, creating intuitive and responsive user interfaces",
+    "Drove the creation of a Copilot product, leveraging AI to streamline and automate key business processes",
+  ],
+  date: "Jan 2025 - Present",
+};

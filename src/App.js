@@ -21,7 +21,14 @@ import {
   scooter_hiring_app,
 } from "./assets/projectsList.js";
 import Experience from "./Components/Experience/Experience.js";
-import { kss, iff, soundse, woolies, reyts } from "./assets/experienceList.js";
+import {
+  kss,
+  iff,
+  soundse,
+  woolies,
+  reyts,
+  kecilin,
+} from "./assets/experienceList.js";
 import Projects from "./Components/Projects/Projects.js";
 import { useEffect, useState } from "react";
 
@@ -98,10 +105,10 @@ function App() {
           <p class="header-subtitle">click to learn more</p>
         </span>
         <Experience
-          title={kss.title}
-          company={kss.company}
-          experience={kss.experience}
-          date={kss.date}
+          title={kecilin.title}
+          company={kecilin.company}
+          experience={kecilin.experience}
+          date={kecilin.date}
         />
         <Experience
           title={reyts.title}
@@ -114,6 +121,12 @@ function App() {
           company={woolies.company}
           experience={woolies.experience}
           date={woolies.date}
+        />
+        <Experience
+          title={kss.title}
+          company={kss.company}
+          experience={kss.experience}
+          date={kss.date}
         />
         <span>
           <h1>Volunteering</h1>
